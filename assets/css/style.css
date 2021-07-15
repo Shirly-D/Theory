@@ -107,6 +107,12 @@ li {
   Header styling starts here
 =================================*/
 
+header .wrapper {
+  width: 68%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
 
 
 
@@ -119,6 +125,13 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+
+.banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: url('https://via.placeholder.com/1517x418.png');
+}
 
 
 
