@@ -110,8 +110,34 @@ li {
 header .wrapper {
   width: 68%;
   margin: 0 auto;
-  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
 }
+
+header {
+  width: 100%;
+  position: absolute;
+  border-top: 8px solid #5386C1;}
+
+header h1 {
+  flex-basis: 20%;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header nav {flex-basis: 16%;}
+
+header nav ul {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+header ul li {margin-right: 10px;}
+header ul li:last-child {margin-right: 0;}
+
 
 
 
@@ -129,9 +155,31 @@ header .wrapper {
 .banner {
   width: 100%;
   height: auto;
-  position: relative;
   background: url('https://via.placeholder.com/1517x418.png');
 }
+
+.banner .wrapper {width: 68%;}
+
+.banner h2 {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.banner h2 span {text-transform: lowercase;}
+
+.banner p {
+  color: #fff;
+  font-size: 12px;
+}
+
+
 
 
 
