@@ -230,14 +230,110 @@ header ul li a:hover {color: #fff;}
   color: #5386C1;
 }
 
+.ipsum-section {background-color: #5386C1;}
+
+.ipsum-section .wrapper {
+  width: 68%;
+  padding: 90px 0 105px;
+}
 
 
+.ipsum-section h2 {
+  margin-bottom: 18px;
+  color: #CCDAEC;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+.ipsum-section p {
+  margin-bottom: 45px;
+  color: #B9CEE6;
+  font-size: 15px;
+  text-align: center;
+}
 
+.ipsum-section p::first-letter {text-transform: capitalize;}
 
+.ipsum-ul {
+  width: 100%;
+  display: flex;
+}
 
+.ipsum-ul li:first-child {margin-left: 0;}
 
+.ipsum-ul li {
+  flex-basis: 22%;
+  padding: 43px 0;
+  margin-left: 4%;
+  border: 1px solid #7AA1CF;
+}
 
+.ipsum-ul li figure {
+  width: 58%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.ipsum-ul li img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.ipsum-heading {
+  margin-bottom: 10px;
+  color: #F7FAFD;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.ipsum-text {
+  color: #99B6DA;
+  text-align: center;
+  display: inherit;
+}
+
+.nunc-section .wrapper {
+  width: 68%;
+  padding: 96px 0 82px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.nunc-section h2 {
+  color: #9FBBDC;
+  font-size: 35px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.nunc-section p {
+  margin-bottom: 60px;
+  color: #DBDBDB;
+  text-align: center;
+  font-size: 15px;
+}
+
+.nunc-ul {
+  width: 100%;
+  display: flex;
+}
+
+.nunc-ul li:first-child {margin-left: 0;}
+
+.nunc-ul li {
+  flex-basis: 50%;
+  margin-left: 6%;
+}
+
+.nunc-ul figure {margin-bottom: 30px;}
+
+.nunc-ul li p {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: left;
+}
 
 
 
@@ -249,6 +345,40 @@ header ul li a:hover {color: #fff;}
   footer styling starts here
 =================================*/ 
 
+footer .wrapper {
+  width: 68%;
+  padding: 38px 0 20px;
+}
+
+footer p {
+  display: inline-block;
+  color: #EAEAEA;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer li {flex-basis: 3%;}
+footer li:last-child {flex-basis: 0;}
+footer li a {text-indent: -9999px;}
+
+footer li a::before {
+  float: right;
+  color: #5386C1;
+  font-family: "FontAwesome";
+  font-size: 15px;
+  text-indent: 0;
+}
+
+.facebook::before {content: "\f09a";}
+.twitter::before {content: "\f099";}
+.linkedin::before {content: "\f0e1";}
+.pinterest::before {content: "\f231";}
+.vimeo::before {content: "\f27d";}
 
 
 
