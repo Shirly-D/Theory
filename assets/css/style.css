@@ -402,8 +402,10 @@ footer li a::before {
 
 
   .menu {
-    width: 5%;
+    width: 8%;
     height: 25px;
+    padding-bottom: 20px;
+    margin-right: 3%;
     display: flex;
     cursor: pointer;
     transition: all .5s ease-in-out; 
@@ -411,10 +413,9 @@ footer li a::before {
 
   .menu-bar {
     width: 4%;
-    height: 3px;
+    height: 4px;
     position: absolute;
     top: 75px;
-    right: 20%;
     border-radius: 5px;
     background: #fff;
     transition: all .5s ease-in-out;
@@ -425,7 +426,7 @@ footer li a::before {
   .menu-bar::after {
     content: "";
     width: 98%;
-    height: 3px;
+    height: 4px;
     position: absolute;
     border-radius: 5px;
     transition: all .5s ease-in-out;
@@ -455,7 +456,7 @@ footer li a::before {
     text-align: center;
   }
 
-  .menu-bar:hover ~  nav ul {
+  .menu:hover nav ul {
     left: 0;
   }
 
