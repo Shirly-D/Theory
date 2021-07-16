@@ -129,7 +129,7 @@ header h1 {
 }
 
 header h1 a {color: #fff;}
-header nav {flex-basis: 16%;}
+header nav {flex-basis: 100%;}
 
 header nav ul {
   display: inline-block;
@@ -142,6 +142,11 @@ header ul li {margin-right: 10px;}
 header ul li:last-child {margin-right: 0;}
 header ul li a {color: #7F8082;}
 header ul li a:hover {color: #fff;}
+
+.menu-bar {
+  float: left;
+  text-indent: -9999px;
+}
 
 
 
@@ -393,32 +398,167 @@ footer li a::before {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 768px) {
 
-  header nav {
-    position: absolute;
-    left: -100%;
-  }
+  /* header section start */
+
+
   .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
     width: 5%;
     height: 25px;
+    display: flex;
     cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 2px solid #fff;
+    transition: all .5s ease-in-out; 
   }
 
   .menu-bar {
-    width: 80%;
+    width: 4%;
     height: 3px;
+    position: absolute;
+    top: 75px;
+    right: 20%;
+    border-radius: 5px;
     background: #fff;
+    transition: all .5s ease-in-out;
+    
+  }
+
+  .menu-bar::before,
+  .menu-bar::after {
+    content: "";
+    width: 98%;
+    height: 3px;
+    position: absolute;
     border-radius: 5px;
     transition: all .5s ease-in-out;
-    position: absolute;
-    top: 12px;
-    left: 9%;
+    background: #fff;
+    left: 1%;
   }
+
+  .menu-bar::before {top: -8px;}
+  .menu-bar::after {top: 8px;}
+
+  .menu  ul {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #9FBBDC;
+    top: 88px;
+    left: -100%;
+    text-align: left;
+    transition: .5s;
+  }
+
+  .menu ul li {
+    display: block;
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .menu-bar:hover ~  nav ul {
+    left: 0;
+  }
+
+  /* header section end */
+
+  /* main section start */
+
+  .banner h2 {font-size: 43px;}
+  .banner p {font-size: 14px;}
+
+  .list-section .wrapper {padding: 50px 0;}
+  .list-ul {display: inline-block;}
+  .list-ul li:first-child {padding-top: 0;}
+  .list-ul li:last-child {border-bottom: none;}
+
+  .list-ul li {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 45px;
+    border-bottom: 1px solid #E0E0E0;
+    border-right: none;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .list-heading {
+    width: 56%;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .list-text {
+    width: 77%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .list-btn {
+    width: 70%;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+  }
+  .ipsum-section .wrapper {padding: 50px 0;}
+  .ipsum-section h2 {font-size: 30px;}
+  .ipsum-section p {font-size: 13px;}
+  .ipsum-ul {display: inline-block;}
+  .ipsum-ul li:last-child {margin-bottom: 0;}
+
+  .ipsum-ul li {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 33px;
+  }
+
+  .ipsum-text {display: block;}
+  .nunc-section .wrapper {padding: 50px 0 0;}
+  .nunc-section p {margin-bottom: 40px;}
+  .nunc-ul {display: inline-block;}
+  .nunc-ul li:last-child {margin-left: 0;}
+
+  .nunc-ul .list-heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nunc-ul li p {text-align: center;}
+
+  .nunc-ul li a {
+    width: 100%;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* main section end */
+
+  /* footer section start */
+
+  footer .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  footer p {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  footer ul {
+    display: inline-block;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  footer ul li {
+    width: 8%;
+    margin-bottom: 30px;
+  }
+
+  /* footer section end */
 
 
 
